@@ -5,15 +5,19 @@
 /* ***********************
  * Require Statements
  *************************/
+
 const express = require("express")
 const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
 
+
 /* ***********************
  * Routes
  *************************/
 app.use(static)
+
+
 
 /* ***********************
  * Local Server Information
@@ -21,6 +25,7 @@ app.use(static)
  *************************/
 const port = process.env.PORT
 const host = process.env.HOST
+
 
 /* ***********************
  * Log statement to confirm server operation
